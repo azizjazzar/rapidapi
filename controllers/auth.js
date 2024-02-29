@@ -16,9 +16,9 @@ exports.getPage = async (req, res, next) => {
         if (teamNames.length === 2  ) {
           const matchStatus = matchTime.match(/^\d{2}:\d{2}$/) ? matchTime : "Finished or still playing";
           matches.push({
-            TeamA: teamNames[0],
-            TeamB: teamNames[1],
-            Heure: matchStatus
+            teamA: teamNames[0],
+            teamB: teamNames[1],
+            hour: matchStatus
           });
         }
       });
