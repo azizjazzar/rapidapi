@@ -5,7 +5,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("aaaaa")
+  res.send("backserver is working")
 });
 
 app.use("/api/", require("./routes/auth"));

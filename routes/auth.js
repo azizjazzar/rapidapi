@@ -4,5 +4,5 @@ const {
   getPage
 } = require("../controllers/auth");
 
-router.route("/test").get(getPage);
+router.route("/getall").get(getPage);
 module.exports = router;
