@@ -27,6 +27,6 @@ exports.getPage = async (req, res, next) => {
       res.status(response.status).json({ error: 'Erreur lors de la récupération du HTML de la page' });
     }
   } catch (error) {
-    res.status(500).json({ error: 'Erreur lors de la récupération du HTML de la page : ' + error.message });
+    res.status(500).json({ error: 'Erreur lors de loa récupération du HTML de la page : ' + error.message });
   }
 };
